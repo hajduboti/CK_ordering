@@ -1,16 +1,31 @@
 package ck.ordering.Entities;
 
-public class Menu {
-    private String name;
-    private String price;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-    public Menu(String name, String price) {
+@Entity
+public class Menu {
+
+    @Id
+    private int id;
+    private String name;
+    private Double price;
+
+    public Menu(){}
+
+    public Menu(int id,String name, double price) {
+        this.id = id;
         this.name = name;
         this.price = price;
     }
-    
-    public Menu(){
-        
+
+    //getters and setters
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -21,11 +36,9 @@ public class Menu {
         this.name = name;
     }
 
-    public String getPrice() {
+    public Double getPrice() {
         return price;
     }
 
-    public void setPrice(String price) {
-        this.price = price;
-    }
+    public void setPrice(Double price) {this.price = price;}
 }

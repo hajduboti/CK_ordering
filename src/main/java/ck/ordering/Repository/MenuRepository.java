@@ -4,10 +4,7 @@ import ck.ordering.Entities.Menu;
 import org.springframework.data.repository.CrudRepository;
 
 /**
- * Created by Chris on 20-11-17.
+ * Created by gabriele on 24/11/2017.
  */
-public interface MenuRepository extends CrudRepository<Menu, Long> {
-    Menu findByMenuName(String menuName);
-
-
+public interface MenuRepository extends CrudRepository<Menu, Integer> {
 }
