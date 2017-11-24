@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .count-input {
+            position: relative;
+            width: 100%;
+            max-width: 165px;
+            margin: 10px 0;
+        }
+        .count-input input {
+            width: 100%;
+            height: 36.92307692px;
+            border: 1px solid #000;
+            border-radius: 2px;
+            background: none;
+            text-align: center;
+        }
+        .count-input input:focus {
+            outline: none;
+        }
+        .count-input .incr-btn {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            font-size: 26px;
+            font-weight: 300;
+            text-align: center;
+            line-height: 30px;
+            top: 50%;
+            right: 0;
+            margin-top: -15px;
+            text-decoration:none;
+        }
+        .count-input .incr-btn:first-child {
+            right: auto;
+            left: 0;
+            top: 46%;
+        }
+        .count-input.count-input-sm {
+            max-width: 125px;
+        }
+        .count-input.count-input-sm input {
+            height: 36px;
+        }
+        .count-input.count-input-lg {
+            max-width: 200px;
+        }
+        .count-input.count-input-lg input {
+            height: 70px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Bowls</h2>
+    <ul class="list-group">
+
+        <li class="list-group-item">
+            <div class="row">
+                <div class="col-xs-6 col-md-2" ><img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="110"></div>
+                <div class="col-xs-6 col-md-7" >.<h4> MEXICALI BOWL </h4> <p> Seasoned quinoa, chipolte chicken or tofu, fajitas vegetables, black beans, fresh salsa, guacamole, cilantro, lime, tortilla chips, chipotle crema dressing </p></div>
+                <div class="col-xs-6 col-md-2" ><div class="count-input space-bottom">
+                    <a class="incr-btn" data-action="decrease" href="#">–</a>
+                    <input class="quantity" type="text" name="quantity" value="1"/>
+                    <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                </div><div class="container">
+
+                </div></div>
+            </div>
+        </li>
+        <li class="list-group-item"><div style="display:table">
+            <div class="design" style="display:table-cell; vertical-align:top;">
+                <div class="row">
+                    <div class="col-xs-6 col-md-2" ><img src="cinqueterre.jpg" class="img-rounded" alt="Cinque Terre" width="150" height="110"></div>
+                    <div class="col-xs-6 col-md-7" >.<h4> MEXICALI BOWL </h4> <p> Seasoned quinoa, chipolte chicken or tofu, fajitas vegetables, black beans, fresh salsa, guacamole, cilantro, lime, tortilla chips, chipotle crema dressing </p></div>
+                    <div class="col-xs-6 col-md-2" ><div class="count-input space-bottom">
+                        <a class="incr-btn" data-action="decrease" href="#">–</a>
+                        <input class="quantity" type="text" name="quantity" value="1"/>
+                        <a class="incr-btn" data-action="increase" href="#">&plus;</a>
+                    </div><div class="container">
+
+                    </div></div>
+                </div>
+
+            </div>
+
+</body>
+</html>
